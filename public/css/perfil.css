@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.produc-precio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(82, 81, 81); 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+th, td {
+    padding: 15px;
+    text-align: left; 
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(43, 43, 204);
+    color: white;
+}
+
+@media screen and (max-width:769px){
+
+    .table1{
+        width: 100%;
+    }
+
+    .padret2 .table2{
+        width: 100%;
+    }
+
+    .table1, thead, tbody, th, td, tr{
+        display: block ;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr{
+        margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd){
+        background: #ccc;
+    }
+    td{
+        border: none;
+        border-bottom: 1px solid #eee ;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before{
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    
+    tr{
+        margin: 0 0 1rem 0;
+    }
+
+    .td{
+        border: none;
+        border-bottom: 1px solid #eee ;
+        position: relative;
+        padding-left: 0%;
+    }
+
+    .td:before{
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td{
+        border: none;
+        border-bottom: 1px solid #eee ;
+        position: relative;
+        padding-left: 15%;
+    }
+
+    .final-precio{
+        position: absolute;
+        left: 6px;
+    }
+}
+
+.foto2{
+    width: 50%;
+    height: auto;
+}
